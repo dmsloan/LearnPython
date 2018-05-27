@@ -6,10 +6,12 @@ def is_prime(x):
   else:
     for n in range(2,x):
       if x % n == 0:
+        print(x, "is divisable by", n )
+        print(x, "is not prime")
         return False
-        print("not")
       else:
-        return True
-        print("yes")
+        print(x, "is not divisable by", n )
+    print(x, "is prime")
+    return True
 
-is_prime(3)
+is_prime(197)
