@@ -6,4 +6,4 @@ def reverse(text):
     print ("".join(newText))
   return("".join(newText))
 
-reverse("Derek")
+reverse("Ralph and Sam")
