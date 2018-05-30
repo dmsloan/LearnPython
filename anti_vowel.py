@@ -2,13 +2,19 @@ def anti_vowel(text):
     vowel = list("aeiouAEIOU")
     newText = list()
 
-    for num in range(len(text)):
+    #for letter in range(len(text)):
+    for letter in list(text):
         for vwl in vowel:
-            if text[num] == vwl:
+            if letter != vwl:
+                continue
+            elif letter == vwl:
                 break
-        newText.append(text[num])
+        else:
+            newText.append(letter)
     print ("".join(newText))
-    return("".join(newText))
+    newText = "".join(newText)
+    print(newText)
     print(vowel)
+    return(newText)
 
 anti_vowel("Ralph and Sam")
