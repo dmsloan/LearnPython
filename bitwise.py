@@ -46,12 +46,29 @@ print(bin(first^second))
 
 print("print ~42 yeilds", ~42)
 
-def check_bit4(input):
-  mask = 0b1000
-  print(bin(input))
-  if (bin(input)&mask) > 0:
+def check_bit4(inputa):
+  mask = 0b1100
+  print(bin(inputa))
+  if (inputa & mask) > 0:
+    print(inputa & mask)
     return("on")
   else:
     return("off")
 
 check_bit4(0b11011)
+
+#You can also use masks to turn a bit in a number on using |. For example, 
+#let's say I want to make sure the rightmost bit of number a is turned on. 
+#I could do this:
+a = 0b10111011
+mask = 0b100
+print(bin(a|mask))
+#Using the bitwise | operator will turn a corresponding bit on if it is off
+#and leave it on if it is already on.
+
+#Using the XOR (^) operator is very useful for flipping bits. Using ^ on a
+#bit with the number one will return a result where that bit is flipped.
+#For example, let's say I want to flip all of the bits in a. I might do this:
+a = 0b11101110
+mask = 0b11111111
+print(bin(a ^ mask))
