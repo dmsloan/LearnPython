@@ -1,4 +1,5 @@
 num=1
+contProgram  = "Continue program"
 
 while num < 10:
     print (num)
@@ -15,12 +16,12 @@ print(listvar)
 #the following is different than the next for statement
 for eachNumber in listvar:
     print(eachNumber)
-print("Continue program")
+print(contProgram)
 
 
 for eachNumber in listvar:
     print(eachNumber)
-    print("Continue program")
+    print(contProgram)
 
 for x in range(1,18):
     print(x)
@@ -37,3 +38,6 @@ elif x>17:
 else:
     print("this will never display because it bumps out earlier")
     
+print(contProgram.upper())
+print(contProgram.capitalize())
+print(contProgram.title())
