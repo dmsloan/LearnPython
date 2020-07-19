@@ -1,6 +1,9 @@
 #updated this file on the laptop at 810
 # Created by https://www.gitignore.io/api/windows,visualstudio,visualstudiocode,netbeans,notepadpp
 
+LearnPyQt5/
+__pycache__/
+
 ### Windows ###
 # Windows image file caches
 Thumbs.db
@@ -20,7 +23,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -276,7 +278,6 @@ paket-files/
 .idea/
 *.sln.iml
 
-
 ### VisualStudioCode ###
 .vscode
 
@@ -289,7 +290,6 @@ dist/
 nbdist/
 nbactions.xml
 .nb-gradle/
-
 
 ### NotepadPP ###
 # Notepad++ backups #

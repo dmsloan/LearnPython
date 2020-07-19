@@ -1,0 +1,35 @@
+A virtual environment is usefull because it is a blank place to start a project.
+You start with just bare python with no libraries installed. Libraries are also called packages. This is important because as libraries are developed by others some of the functions become obsolete and are either changed or removed. In addition libraries sometimes conflict with one another and the libraries you have installed in one virtual environments will not have acces to the libraries installed in other virtual environments. 
+
+To create a virtual environment enter the following.
+"python -m venv <name of virtual environment you want to create>". For example "python -m venv LearnPyQt5" will create a folder called LearnPyQt5 in a folder within you current folder. Before doing this make sure that when you enter "python" the proper version you are looking for opens. Some systems need you to put in python3 or python2. I dont quite understand what is up with this at this point.
+To launch the virtual environment type in <C:\Users\dsloa\Documents\GitHub\LearnPython\LearnPyQt5\Scripts\activate.bat> or navigate to the Scripts folder of the virtual environment you want to launch and run activate.bat. If you want to set up a shortcut to launch the virtual environmant you may need to use "call activate.bat".
+
+Idle is a limited IDE for python.
+
+To launch Idle from within a virtual environment enter <python -m idlelib> from the command line after activating the virtual environment.
+
+Packages for python are installed by a package manager called "pip". Pip is similar to the linux package manager "apt".
+To install a package called PyQt5 with a specific version run "pip install PyQt5==5.13.2" from the command line within the virtual environmnet.
+
+PyQt is one of the most popular Python bindings for the Qt cross-platform C++ framework used for graphical user interfaces. The source files for the user interfaces can be created manually within a python script or you can use another tool called designer.exe. 
+
+designer.exe is the program that we will use to make designing GUIs a lot easier.
+
+To install a graphical interface that greatly helps to make the interfaces install pyqt5-tools by entering the following from the command prompt within the virtual environment "pip install pyqt5-tools".
+
+Since we installed pyqt5-tools from within the virtual environment the exicutible designer.exe is located within the Scripts folder within the virtual environment.
+
+Launch designer.exe. You will be welcomed with a selection window; select "Main Window" and then click "Create".
+
+When you are happy with what you have done (this is just a simple practice) then click File -> Save in the top left and save it somewhere where you will remember; I will save it as 'printMessage.ui' on my desktop.
+
+Converting .ui to .py
+Now that we have our .ui file, we can convert it into Python code so we can modify and run it.
+
+To do this we need to located pyuic5. pyuic5 converts .ui to .py in one simple command and is located in the 'Scripts' folder in your virtual environment. 
+
+Continue learning about python and PyQt5 here: https://nitratine.net/blog/post/python-guis-with-pyqt/#setting-up-the-environment
+
+See the following for more info about PyQt5 https://build-system.fman.io/pyqt5-tutorial
+
