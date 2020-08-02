@@ -280,6 +280,7 @@ paket-files/
 
 ### VisualStudioCode ###
 .vscode
+*.code-workspace
 
 ### NetBeans ###
 nbproject/
